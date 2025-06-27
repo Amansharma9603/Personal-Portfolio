@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aman Sharma | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Aman Sharma</h1>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" data-aos="fade-up">
+    <h2>Hi, I'm Aman Sharma</h2>
+    <p>B.Tech CSE Student | Web Developer Aspirant</p>
+  </section>
+
+  <section id="about" data-aos="fade-right">
+    <h3>About Me</h3>
+    <p>
+      I'm a B.Tech Computer Science student at Amity University, Noida. I am passionate about front-end web development and love turning ideas into responsive, interactive web apps.
+    </p>
+  </section>
+
+  <section id="projects" data-aos="fade-left">
+    <h3>Projects</h3>
+    <div class="project-card" data-aos="zoom-in">
+      <h4>🧮 Calculator</h4>
+      <p>A simple calculator using HTML, CSS, and JavaScript.</p>
+      <a href="https://github.com/Amansharma9603/calculator" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+      <h4>✅ To-Do List</h4>
+      <p>Advanced to-do list with edit, filter, and localStorage support.</p>
+      <a href="https://github.com/Amansharma9603/To-do-list" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h3>Contact Me</h3>
+    <form action="mailto:aman.bth6@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <textarea name="Message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p class="email-note">Or email me directly at: <a href="mailto:aman.bth6@gmail.com">aman.bth6@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aman Sharma. Built with ❤️ using HTML, CSS, and JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>

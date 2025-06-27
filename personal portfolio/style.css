@@ -1,0 +1,117 @@
+:root {
+  --bg: #f9f9f9;
+  --text: #333;
+  --primary: #007BFF;
+  --card: white;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --primary: #4dabf7;
+  --card: #1e1e1e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: 0.3s;
+}
+
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a,
+#themeToggle {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+#hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.project-card {
+  background-color: var(--card);
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.project-card a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.email-note {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--primary);
+  color: white;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
